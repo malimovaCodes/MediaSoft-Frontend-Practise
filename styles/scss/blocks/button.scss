@@ -1,0 +1,67 @@
+@use "../mixins/mixins.scss" as mixins;
+
+.button {
+    @include mixins.button-base;
+
+
+    &--primary {
+        @include mixins.button-primary(18px);
+    }
+
+    &--menu {
+        height: 56px;
+        width: 208px;
+        font-size: 15px;
+    }
+
+    &--content-grid {
+        justify-self: start;
+    }
+
+    &--small {
+        @include mixins.button-small(60px, 60px);
+    }
+
+    &--small-shadow {
+        @include mixins.button-small-shadow(60px, 60px);
+        z-index: 2;
+    }
+
+    &--secondary {
+        @include mixins.button-secondary(18px);
+    }
+}
+
+@media (max-width: 1120px) {
+    .button {
+        &--menu {
+            height: 46px;
+            width: 180px;
+            font-size: 12px;
+        }
+
+        &--small {
+            @include mixins.button-small(46px, 46px);
+        }
+
+        &--primary {
+            @include mixins.button-primary(15px);
+        }
+
+        &--secondary {
+            @include mixins.button-secondary(15px);
+        }
+    }
+}
+
+@media (max-width: 780px) {
+    .button {
+        &--primary {
+            @include mixins.button-primary(10px);
+        }
+
+        &--secondary {
+            @include mixins.button-secondary(10px);
+        }
+    }
+}

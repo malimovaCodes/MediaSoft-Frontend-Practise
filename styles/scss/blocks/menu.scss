@@ -1,0 +1,38 @@
+.menu {
+    display: flex;
+    gap: 40px;
+    margin-left: auto;
+    align-items: center;
+
+    &__option {
+        display: flex;
+        gap: 7px;
+        align-items: center;
+        gap: 0.4rem;
+        cursor: pointer;
+    }
+
+    &__text {
+        font-family: 'Jost-Medium', sans-serif;
+    }
+
+    &__burger::before {
+        display: none;
+    }
+}
+
+@media (max-width: 1120px) {
+    .menu {
+        gap: 10px;
+    }
+}
+
+@media (max-width: 950px) {
+    .menu {
+        display: none;
+
+        &__burger::before {
+            display: inline-block;
+        }
+    }
+}

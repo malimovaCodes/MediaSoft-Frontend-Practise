@@ -1,0 +1,224 @@
+@use "../mixins/mixins.scss" as mixins;
+
+.card {
+    @include mixins.card;
+    position: relative;
+    overflow: hidden;
+    min-width: 394px;
+    min-height: 540px;
+
+    &__content {
+        font-size: 15px;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        padding: 35px;
+        width: 100%;
+        box-sizing: border-box;
+        align-items: flex-start;
+        height: 100%;
+        justify-content: space-between;
+
+        &--customer {
+            display: flex;
+            flex-direction: column;
+            padding: 40px;
+            gap: 30px;
+        }
+    }
+
+    &__name {
+        font-size: 36px;
+        font-family: 'Jost-SemiBold', sans-serif;
+    }
+
+    &__description {
+        font-size: 24px;
+        font-family: 'Jost-Regular', sans-serif;
+        color: var(--color-secondary);
+        margin-top: -50px;
+        line-height: 35px;
+    }
+
+    &__img {
+        width: 150px;
+        display: block;
+        margin: 0 auto;
+    }
+
+    &__button {
+        @include mixins.button-base;
+        @include mixins.button-primary(18px);
+        border-radius: 126px;
+        padding: 15px 30px;
+        font-family: 'Jost-Medium', sans-serif;
+
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    &__text {
+        font-size: 20px;
+        font-family: 'Jost-Regular', sans-serif;
+        line-height: 30px;
+        max-width: 387px;
+    }
+
+    &--customer {
+        max-width: 500px;
+        text-align: left;
+    }
+
+    &__customer {
+        font-family: 'Jost-SemiBold', sans-serif;
+        font-size: 24px;
+        line-height: 30px;
+        max-width: 201px;
+        white-space: nowrap;
+
+        &--info {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+    }
+
+    &__rating {
+        display: flex;
+        flex-direction: row;
+        gap: 5px;
+    }
+}
+
+@media (max-width: 1485px) {
+    .card {
+        min-width: 350px;
+        min-height: 460px;
+
+        &__content {
+            padding: 30px;
+        }
+
+        &__name {
+            font-size: 30px;
+        }
+
+        &__description {
+            font-size: 20px;
+        }
+
+        &__img {
+            width: 120px;
+        }
+
+        &__customer {
+            font-size: 20px;
+
+            &--info {
+                gap: 10px;
+            }
+        }
+
+        &__rating {
+            gap: 3px;
+        }
+    }
+}
+
+@media (max-width: 1120px) {
+    .card {
+        min-width: 280px;
+
+        &__content {
+            &--customer {
+                padding: 20px;
+            }
+        }
+
+        &__text {
+            font-size: 18px;
+            line-height: 26px;
+            max-width: 200px;
+        }
+
+        &__customer {
+
+            &--info {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+
+        &__review-photo {
+            width: 380px;
+        }
+
+        &__button {
+            @include mixins.button-primary(15px);
+        }
+    }
+}
+
+@media (max-width: 950px) {
+    .card {
+        max-width: 350px;
+
+        &__text {
+            font-size: 16px;
+            line-height: 24px;
+            max-width: 400px;
+        }
+
+
+        &__review-photo {
+            width: 300px;
+        }
+    }
+}
+
+@media (max-width: 780px) {
+    .card {
+        max-width: 300px;
+        min-height: 300px;
+
+        &__content {
+            font-size: 15px;
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+            padding: 15px;
+            width: 100%;
+            box-sizing: border-box;
+            align-items: flex-start;
+            height: 100%;
+        }
+
+        &__text {
+            font-size: 16px;
+            line-height: 24px;
+            max-width: 400px;
+        }
+
+        &__name {
+            font-size: 18px;
+        }
+
+        &__description {
+            font-size: 12px;
+            line-height: 12px;
+        }
+
+        &__img {
+            width: 80px;
+        }
+
+
+        &__review-photo {
+            width: 300px;
+        }
+
+        &__button {
+            @include mixins.button-primary(10px);
+        }
+    }
+}

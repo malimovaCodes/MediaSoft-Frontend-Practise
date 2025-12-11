@@ -1,0 +1,20 @@
+.header {
+    padding: 1.5rem 0;
+    background-color: var(--color-neutral);
+
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__logo {
+        width: 126px;
+    }
+
+    &__buttons {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+    }
+}

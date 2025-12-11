@@ -1,0 +1,274 @@
+@use "../mixins/mixins.scss" as mixins;
+
+.footer {
+
+    &__container {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 60px 40px;
+        padding: 80px 0;
+
+        >*:nth-child(1),
+        >*:nth-child(3),
+        >*:nth-child(5) {
+            justify-self: start;
+        }
+
+        >*:nth-child(2),
+        >*:nth-child(4),
+        >*:nth-child(6) {
+            justify-self: end;
+        }
+    }
+
+    &__logo {
+        width: 307px;
+    }
+
+    &__copyright {
+        font-size: 0.9rem;
+    }
+
+    &__title {
+        font-size: 40px;
+        margin-bottom: 1rem;
+        font-family: "Jost-ExtraBold", sans-serif;
+    }
+
+    &__description {
+        max-width: 558px;
+        font-size: 30px;
+        color: var(--color-secondary);
+        line-height: 40px;
+    }
+
+
+    &__button {
+        border: none;
+        cursor: pointer;
+        font-family: 'Jost-Medium';
+        padding: 20px 40px;
+        width: 173px;
+    }
+
+    &__bottom {
+        display: flex;
+        justify-content: flex-end;
+        align-items: end;
+        margin-top: 3rem;
+        grid-column: 2 / -1;
+    }
+
+    &__subscribe {
+        font-size: 24px;
+        max-width: 413px;
+    }
+
+    &__text {
+        font-size: 22px;
+        color: var(--color-secondary);
+
+        &--bold {
+            color: var(--color-primary);
+            font-family: 'Jost-Medium', sans-serif;
+        }
+    }
+
+    &__details {
+        display: flex;
+        gap: 20px;
+    }
+
+    &__link {
+        text-transform: uppercase;
+        color: var(--color-primary);
+        font-size: 18px;
+        font-family: 'Jost-SemiBold', sans-serif;
+    }
+
+    &__contact {
+        padding-top: 30px;
+    }
+
+    &__contact,
+    &__subscribe {
+        align-items: flex-start;
+        text-align: left;
+        max-width: 380px;
+    }
+
+    &__contacts {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+
+    &__socials {
+        display: flex;
+        gap: 24px;
+    }
+
+    &__input {
+        @include mixins.input-field(413px, 70px, 22px);
+    }
+
+    &__link-group {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+    }
+
+    &__arrow {
+        color: var(--color-primary)
+    }
+
+    &__arrow,
+    &__link {
+        cursor: pointer;
+        transition: color 0.2s ease;
+
+        &:hover {
+            color: var(--color-secondary);
+        }
+    }
+
+    &__flex-column {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+}
+
+@media (max-width: 1485px) {
+    .footer {
+        &__container {
+            display: grid;
+            grid-template-columns: auto auto;
+            gap: 40px 20px;
+            padding: 60px 0;
+        }
+
+        &__description {
+            max-width: 510px;
+            font-size: 20px;
+            color: var(--color-secondary);
+            line-height: 30px;
+        }
+
+        &__title {
+            font-size: 30px;
+        }
+
+        &__text {
+            font-size: 16px;
+        }
+    }
+
+}
+
+@media (max-width: 950px) {
+    .footer {
+        &__container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 40px;
+            padding: 60px 0;
+
+            >*:nth-child(1),
+            >*:nth-child(3),
+            >*:nth-child(5) {
+                justify-self: center;
+            }
+
+            >*:nth-child(2),
+            >*:nth-child(4),
+            >*:nth-child(6) {
+                justify-self: center;
+            }
+        }
+
+        &__flex-column {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        &__description--link,
+        &__title--find {
+            display: none;
+        }
+
+        &__logo {
+            width: 250px;
+            margin: 0 auto;
+        }
+
+        &__button {
+            margin: 0 auto;
+        }
+    }
+}
+
+@media (max-width: 780px) {
+    .footer {
+        &__container {
+            gap: 20px;
+            padding: 40px 0;
+
+            >*:nth-child(1),
+            >*:nth-child(3),
+            >*:nth-child(5) {
+                justify-self: center;
+            }
+
+            >*:nth-child(2),
+            >*:nth-child(4),
+            >*:nth-child(6) {
+                justify-self: center;
+            }
+        }
+
+        &__flex-column {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            align-items: center;
+        }
+
+        &__description--link,
+        &__title--find {
+            display: none;
+        }
+
+        &__logo {
+            width: 200px;
+            margin: 0 auto;
+        }
+
+        &__button {
+            margin: 0 auto;
+        }
+
+        &__title {
+            font-size: 20px;
+            text-align: center;
+        }
+
+        &__text {
+            font-size: 12px;
+        }
+
+        &__description {
+            max-width: 510px;
+            font-size: 16px;
+            color: var(--color-secondary);
+            line-height: 22px;
+            text-align: center
+        }
+
+        &__input {
+        @include mixins.input-field(300px, 50px, 12px);
+    }
+    }
+}

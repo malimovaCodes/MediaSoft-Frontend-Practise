@@ -1,0 +1,41 @@
+@forward "../css/variables/variables.css";
+
+@forward "reset.scss";
+
+@forward "blocks/container.scss";
+@forward "blocks/section.scss";
+@forward "blocks/page.scss";
+@forward "blocks/menu.scss";
+@forward "blocks/header.scss";
+@forward "blocks/hero.scss";
+@forward "blocks/button.scss";
+@forward "blocks/card.scss";
+@forward "blocks/gallery.scss";
+@forward "blocks/media.scss";
+@forward "blocks/footer.scss";
+
+
+@font-face {
+    font-family: 'Jost-Bold';
+    src: url('../../assets/fonts/Jost-Bold.woff2') format('opentype');
+}
+
+@font-face {
+    font-family: 'Jost-SemiBold';
+    src: url('../../assets/fonts/Jost-SemiBold.woff2') format('opentype');
+}
+
+@font-face {
+    font-family: 'Jost-ExtraBold';
+    src: url('../../assets/fonts/Jost-ExtraBold.woff2') format('opentype');
+}
+
+@font-face {
+    font-family: 'Jost-Regular';
+    src: url('../../assets/fonts/Jost-Regular.woff2') format('opentype');
+}
+
+@font-face {
+    font-family: 'Jost-Medium';
+    src: url('../../assets/fonts/Jost-Medium.woff2') format('opentype');
+}

@@ -1,0 +1,11 @@
+.page {
+    font-family: 'Jost-Regular', sans-serif;
+    font-size: 16px;
+    color: var(--color-primary);
+}
+
+@media (max-width: 1120px) {
+    .page {
+        font-size: 12px;
+    }
+}

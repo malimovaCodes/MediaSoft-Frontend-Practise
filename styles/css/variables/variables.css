@@ -1,0 +1,10 @@
+:root {
+    --color-primary: rgba(27, 27, 29, 1);
+    --color-secondary: rgba(100, 100, 106, 1);
+    --color-neutral: rgba(238, 239, 241, 1);
+    --color-text-buttons: rgba(255, 255, 255, 1);
+    --color-bg-default: rgba(255, 255, 255, 1);
+    --color-shadow: rgba(163, 168, 178, 0.15);
+    --color-small-button: rgba(255, 255, 255, 1);
+    --color-small-button-shadow: rgba(205, 209, 214, 0.28);
+}
