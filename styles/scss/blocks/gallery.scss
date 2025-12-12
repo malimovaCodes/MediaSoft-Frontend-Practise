@@ -13,8 +13,21 @@
         grid-template-rows: auto;
         gap: 2rem;
         align-items: center;
-        gap: 2rem;
     }
+}
+
+.swiper {
+  overflow: hidden;
+  width: 900px;
+}
+
+.swiper-slide {
+  height: auto;
+
+  .card {
+    min-width: unset;
+    width: 100%;
+  }
 }
 
 @media (max-width: 950px) {
