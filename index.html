@@ -1,478 +1,349 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="stylesheet" href="styles/css/main.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
 
     <link rel="shortcut icon" href="assets/images/coffee.svg" />
 
     <title>Online Coffee Shop</title>
-  </head>
+</head>
 
-  <body>
+<body>
     <div class="page">
-      <header class="header">
-        <div class="container">
-          <img src="assets/images/logo.png" alt="" class="header__logo" />
-          <div class="menu">
-            <div class="menu__option">
-              <p class="menu__text">Cafe Munu</p>
-              <i
-                class="fa-duotone fa-solid fa-chevron-down"
-                style="
-                  --fa-primary-color: #000000;
-                  --fa-secondary-color: #000000;
-                "
-              ></i>
-            </div>
-            <div class="menu__option">
-              <p class="menu__text">About us</p>
-              <i
-                class="fa-duotone fa-solid fa-chevron-down"
-                style="
-                  --fa-primary-color: #000000;
-                  --fa-secondary-color: #000000;
-                "
-              ></i>
-            </div>
-            <div class="menu__option">
-              <p class="menu__text">Find Us</p>
-            </div>
-            <div class="menu__option">
-              <p class="menu__text">Alowishus Catering</p>
-            </div>
-            <div class="header__buttons">
-              <button class="button button--small" type="button">
-                <i
-                  class="fa-solid fa-basket-shopping fa-xl"
-                  style="color: #1b1b1d"
-                ></i>
-              </button>
-              <button class="button button--primary button--menu" type="button">
-                BUY GIFT VOUCHERS
-              </button>
-            </div>
-          </div>
-          <i
-            class="fa-solid fa-bars fa-2xl menu__burger"
-            style="color: #333333"
-          ></i>
-        </div>
-      </header>
-      <section class="section">
-        <div class="container">
-          <div class="section__hero">
-            <div class="hero__text">
-              <h1 class="hero__motto hero__motto--title">
-                Alowishus Delicious Coffee
-              </h1>
-              <p class="hero__motto hero__motto--slogan">
-                A drink from the ‘My Alowishus’ bottled brews range OR grab one
-                of our delicious coffee’s.
-              </p>
-              <button class="button button--primary" type="button">
-                DOWNLOAD APP
-              </button>
-              <button class="button button--secondary" type="button">
-                SHOP COFFEE
-              </button>
-            </div>
-            <div class="hero__image">
-              <div class="hero__tag">
-                <div class="hero__rating">
-                  <i class="fa-solid fa-star fa-xl" style="color: #1b1b1d"></i>
-                  <i class="fa-solid fa-star fa-xl" style="color: #1b1b1d"></i>
-                  <i class="fa-solid fa-star fa-xl" style="color: #1b1b1d"></i>
-                  <i class="fa-solid fa-star fa-xl" style="color: #1b1b1d"></i>
-                  <i class="fa-solid fa-star fa-xl" style="color: #1b1b1d"></i>
-                </div>
-                <p class="hero__description">
-                  4.9 out of 5 Overall Star Rating for All Local Business.
-                </p>
-              </div>
-              <div class="hero__cup-wrapper">
-                <img
-                  src="assets/images/hero-cup.svg"
-                  alt=""
-                  class="hero__cup"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="section section--centered">
-        <div class="container container--centered">
-          <h2 class="section__title">Explore Our Alowishus</h2>
-          <p class="section__text section__text--explore">
-            A drink from the ‘My Alowishus’ bottled brews range OR grab one of
-            our delicious coffee’s.
-          </p>
-          <div class="gallery gallery--categories">
-            <div class="card">
-              <div class="card__content">
-                <p class="card__name">Our Catering</p>
-                <p class="card__description">
-                  Alowishus Catering, delicious drop off Catering
-                </p>
-                <img
-                  src="assets/images/card-catering.svg"
-                  alt="Catering icon"
-                  class="card__img"
-                />
-                <button class="card__button" type="button">
-                  ORDER CATHERING
-                </button>
-              </div>
-            </div>
-            <div class="card">
-              <div class="card__content">
-                <p class="card__name">The Food</p>
-                <p class="card__description">
-                  Our entire menu is available as dine in or takeaway.
-                </p>
-                <img
-                  src="assets/images/card-food.svg"
-                  alt="Food icon"
-                  class="card__img"
-                />
-                <button class="card__button" type="button">FOOD MENU</button>
-              </div>
-            </div>
-            <div class="card">
-              <div class="card__content">
-                <p class="card__name">The Gelato</p>
-                <p class="card__description">
-                  Life is like GELATO, enjoy it before it melts.
-                </p>
-                <img
-                  src="assets/images/card-gelato.svg"
-                  alt="Gelato icon"
-                  class="card__img"
-                />
-                <button class="card__button" type="button">
-                  DISCOVER MORE
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="section">
-        <div class="container container--content-grid">
-          <img
-            src="assets/images/cups.jpg"
-            alt="Order your favourite coffee"
-            class="media media--cups"
-          />
-          <h2 class="section__title">Order Your Favourite Coffee</h2>
-          <p class="section__text section__text--order">
-            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-            sint. Velit officia consequat duis enim velit mollit. Exercitation
-            veniam consequat sunt nostrud amet.
-          </p>
-          <button class="button--primary button--content-grid">
-            ORDER NOW
-          </button>
-        </div>
-      </section>
-
-      <section class="section section--centered">
-        <div class="container container--centered">
-          <h2 class="section__title">What Our Customers Say</h2>
-          <div class="section__common-rate">
-            <p class="section__mark">4.9</p>
-            <div class="card__rating rating">
-              <i class="fa-solid fa-star fa-lg" style="color: #ffb700"></i>
-              <i class="fa-solid fa-star fa-lg" style="color: #ffb700"></i>
-              <i class="fa-solid fa-star fa-lg" style="color: #ffb700"></i>
-              <i class="fa-solid fa-star fa-lg" style="color: #ffb700"></i>
-              <i class="fa-solid fa-star fa-lg" style="color: #ffb700"></i>
-            </div>
-            <p class="section__rating-based">based on 2452+ reviews</p>
-          </div>
-          <div class="gallery gallery--reviews">
-            <button
-              type="button"
-              class="arrow button--small-shadow arrow--prev"
-            >
-              <i
-                class="fa-solid fa-arrow-left fa-2xl"
-                style="color: #000000"
-              ></i>
-            </button>
-
-            <div class="swiper">
-              <div class="swiper-wrapper">
-                <div class="card card--customer swiper-slide">
-                  <img
-                    src="assets/images/review-1.jpg"
-                    alt="Brooklyn Simmons"
-                    class="card__review-photo"
-                  />
-                  <div class="card__content--customer">
-                    <div class="card__customer--info">
-                      <p class="card__customer">Brooklyn Simmons</p>
-                      <div class="card__rating rating">
-                        <i
-                          class="fa-solid fa-star fa-lg"
-                          style="color: #ffb700"
-                        ></i>
-                        <i
-                          class="fa-solid fa-star fa-lg"
-                          style="color: #ffb700"
-                        ></i>
-                        <i
-                          class="fa-solid fa-star fa-lg"
-                          style="color: #ffb700"
-                        ></i>
-                        <i
-                          class="fa-solid fa-star fa-lg"
-                          style="color: #ffb700"
-                        ></i>
-                        <i
-                          class="fa-solid fa-star fa-lg"
-                          style="color: #ffb700"
-                        ></i>
-                      </div>
+        <header class="header">
+            <div class="container">
+                <img src="assets/images/logo.png" alt="" class="header__logo" />
+                <div class="menu">
+                    <div class="menu__option">
+                        <p class="menu__text">Cafe Munu</p>
+                        <i class="fa-duotone fa-solid fa-chevron-down" style="--fa-primary-color: #000000; --fa-secondary-color: #000000;"></i>
                     </div>
-                    <p class="card__text">
-                      “Amet minim mollit non deserunt ullamco est sit aliqua
-                      dolor do amet sint. Velit officia consequat duis enim
-                      velit mollit. Exercitation veniam consequat sunt nostrud
-                      amet. Amet minim mollit non deserunt ullamco est sit
-                      aliqua dolor do amet sint. Velit officia”
-                    </p>
-                  </div>
-                </div>
-                <div class="card card--customer swiper-slide">
-                  <img
-                    src="assets/images/review-2.jpg"
-                    alt="Brooklyn Simmons"
-                    class="card__review-photo"
-                  />
-                  <div class="card__content--customer">
-                    <div class="card__customer--info">
-                      <p class="card__customer">Imam White</p>
-                      <div class="card__rating rating">
-                        <i
-                          class="fa-solid fa-star fa-lg"
-                          style="color: #ffb700"
-                        ></i>
-                        <i
-                          class="fa-solid fa-star fa-lg"
-                          style="color: #ffb700"
-                        ></i>
-                        <i
-                          class="fa-solid fa-star fa-lg"
-                          style="color: #ffb700"
-                        ></i>
-                        <i
-                          class="fa-solid fa-star fa-lg"
-                          style="color: #ffb700"
-                        ></i>
-                        <i
-                          class="fa-solid fa-star fa-lg"
-                          style="color: #ffb700"
-                        ></i>
-                      </div>
+                    <div class="menu__option">
+                        <p class="menu__text">About us</p>
+                        <i class="fa-duotone fa-solid fa-chevron-down" style="--fa-primary-color: #000000; --fa-secondary-color: #000000;"></i>
                     </div>
-                    <p class="card__text">
-                      “Amet minim mollit non deserunt ullamco est sit aliqua
-                      dolor do amet sint. Velit officia consequat duis enim
-                      velit mollit. Exercitation veniam consequat sunt nostrud
-                      amet. Amet minim mollit non deserunt ullamco est sit
-                      aliqua dolor do amet sint. Velit officia”
-                    </p>
-                  </div>
-                </div>
-                <div class="card card--customer swiper-slide">
-                  <img
-                    src="assets/images/review-1.jpg"
-                    alt="Sarah Johnson"
-                    class="card__review-photo"
-                  />
-                  <div class="card__content--customer">
-                    <div class="card__customer--info">
-                      <p class="card__customer">Sarah Johnson</p>
-                      <div class="card__rating rating">
-                        <i
-                          class="fa-solid fa-star fa-lg"
-                          style="color: #ffb700"
-                        ></i>
-                        <i
-                          class="fa-solid fa-star fa-lg"
-                          style="color: #ffb700"
-                        ></i>
-                        <i
-                          class="fa-solid fa-star fa-lg"
-                          style="color: #ffb700"
-                        ></i>
-                        <i
-                          class="fa-solid fa-star fa-lg"
-                          style="color: #ffb700"
-                        ></i>
-                        <i
-                          class="fa-solid fa-star fa-lg"
-                          style="color: #ffb700"
-                        ></i>
-                      </div>
+                    <div class="menu__option">
+                        <p class="menu__text">Find Us</p>
                     </div>
-                    <p class="card__text">
-                      "Amet minim mollit non deserunt ullamco est sit aliqua
-                      dolor do amet sint. Velit officia consequat duis enim
-                      velit mollit. Exercitation veniam consequat sunt nostrud
-                      amet. Amet minim mollit non deserunt ullamco est sit
-                      aliqua dolor do amet sint. Velit officia"
-                    </p>
-                  </div>
+                    <div class="menu__option">
+                        <p class="menu__text">Alowishus Catering</p>
+                    </div>
+                    <div class="header__buttons">
+                        <button class="button button--small" type="button">
+                            <i class="fa-solid fa-basket-shopping fa-xl" style="color: #1b1b1d"></i>
+                        </button>
+                        <button class="button button--primary button--menu" type="button">
+                            BUY GIFT VOUCHERS
+                        </button>
+                    </div>
                 </div>
-              </div>
+                <i class="fa-solid fa-bars fa-2xl menu__burger" style="color: #333333"></i>
             </div>
-            <button
-              type="button"
-              class="arrow button--small-shadow arrow--next"
-            >
-              <i
-                class="fa-solid fa-arrow-left fa-2xl fa-flip-horizontal"
-                style="color: #000000"
-              ></i>
-            </button>
-          </div>
-        </div>
-      </section>
+        </header>
+        <section class="section">
+            <div class="container">
+                <div class="section__hero">
+                    <div class="hero__text">
+                        <h1 class="hero__motto hero__motto--title">
+                            Alowishus Delicious Coffee
+                        </h1>
+                        <p class="hero__motto hero__motto--slogan">
+                            A drink from the ‘My Alowishus’ bottled brews range OR grab one
+                            of our delicious coffee’s.
+                        </p>
+                        <button class="button button--primary" type="button">
+                            DOWNLOAD APP
+                        </button>
+                        <button class="button button--secondary" type="button">
+                            SHOP COFFEE
+                        </button>
+                    </div>
+                    <div class="hero__image">
+                        <div class="hero__tag">
+                            <div class="hero__rating">
+                                <i class="fa-solid fa-star fa-xl" style="color: #1b1b1d"></i>
+                                <i class="fa-solid fa-star fa-xl" style="color: #1b1b1d"></i>
+                                <i class="fa-solid fa-star fa-xl" style="color: #1b1b1d"></i>
+                                <i class="fa-solid fa-star fa-xl" style="color: #1b1b1d"></i>
+                                <i class="fa-solid fa-star fa-xl" style="color: #1b1b1d"></i>
+                            </div>
+                            <p class="hero__description">
+                                4.9 out of 5 Overall Star Rating for All Local Business.
+                            </p>
+                        </div>
+                        <div class="hero__cup-wrapper">
+                            <img src="assets/images/hero-cup.svg" alt="" class="hero__cup" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-      <footer class="footer">
-        <div class="container">
-          <div class="footer__container">
-            <div class="footer__slogan footer__flex-column">
-              <img src="assets/images/logo.png" alt="" class="footer__logo" />
-              <p class="footer__description">
-                We made it our mission to create community everyday and grow
-                meaningful, lasting relationships with our staff, our suppliers
-                and of course you, our customers.
-              </p>
+        <section class="section section--centered">
+            <div class="container container--centered">
+                <h2 class="section__title">Explore Our Alowishus</h2>
+                <p class="section__text section__text--explore">
+                    A drink from the ‘My Alowishus’ bottled brews range OR grab one of
+                    our delicious coffee’s.
+                </p>
+                <div class="gallery gallery--categories">
+                    <div class="card">
+                        <div class="card__content">
+                            <p class="card__name">Our Catering</p>
+                            <p class="card__description">
+                                Alowishus Catering, delicious drop off Catering
+                            </p>
+                            <img src="assets/images/card-catering.svg" alt="Catering icon" class="card__img" />
+                            <button class="card__button" type="button">
+                                ORDER CATHERING
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card__content">
+                            <p class="card__name">The Food</p>
+                            <p class="card__description">
+                                Our entire menu is available as dine in or takeaway.
+                            </p>
+                            <img src="assets/images/card-food.svg" alt="Food icon" class="card__img" />
+                            <button class="card__button" type="button">FOOD MENU</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card__content">
+                            <p class="card__name">The Gelato</p>
+                            <p class="card__description">
+                                Life is like GELATO, enjoy it before it melts.
+                            </p>
+                            <img src="assets/images/card-gelato.svg" alt="Gelato icon" class="card__img" />
+                            <button class="card__button" type="button">
+                                DISCOVER MORE
+                            </button>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="footer__contact footer__flex-column">
-              <h3 class="footer__title">Contact Alowishus!</h3>
-              <div class="footer__contacts">
-                <button type="button" class="button button--small-shadow">
-                  <i
-                    class="fa-solid fa-envelope fa-xl"
-                    style="color: #64646a"
-                  ></i>
+        </section>
+
+        <section class="section">
+            <div class="container container--content-grid">
+                <img src="assets/images/cups.jpg" alt="Order your favourite coffee" class="media media--cups" />
+                <h2 class="section__title">Order Your Favourite Coffee</h2>
+                <p class="section__text section__text--order">
+                    Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+                    sint. Velit officia consequat duis enim velit mollit. Exercitation
+                    veniam consequat sunt nostrud amet.
+                </p>
+                <button class="button--primary button--content-grid">
+                    ORDER NOW
                 </button>
-                <p class="footer__description">alowishus@gmai.com</p>
-              </div>
-              <div class="footer__contacts">
-                <button type="button" class="button button--small-shadow">
-                  <i class="fa-solid fa-phone fa-xl" style="color: #64646a"></i>
-                </button>
-                <p class="footer__description">+110 214 214 2451</p>
-              </div>
-              <div class="footer__socials">
-                <button type="button" class="button button--small-shadow">
-                  <i
-                    class="fa-brands fa-facebook-f fa-xl"
-                    style="color: #64646a"
-                  ></i>
-                </button>
-                <button type="button" class="button button--small-shadow">
-                  <i
-                    class="fa-brands fa-instagram fa-2xl"
-                    style="color: #64646a"
-                  ></i>
-                </button>
-                <button type="button" class="button button--small-shadow">
-                  <i
-                    class="fa-brands fa-twitter fa-xl"
-                    style="color: #64646a"
-                  ></i>
-                </button>
-                <button type="button" class="button button--small-shadow">
-                  <i
-                    class="fa-brands fa-linkedin-in fa-xl"
-                    style="color: #64646a"
-                  ></i>
-                </button>
-              </div>
             </div>
-            <div class="footer__locations footer__flex-column">
-              <h3 class="footer__title">Store Locations</h3>
-              <p class="footer__description footer__description--link">
-                Find your nearest Alowishus store with opening hours, location
-                and contact details.
-              </p>
-              <div class="footer__link-group">
-                <a href="#" class="footer__link">Find my Alowishus</a>
-                <a href="#"
-                  ><i
-                    class="fa-solid fa-arrow-left fa-xl fa-flip-horizontal footer__arrow"
-                  ></i
-                ></a>
-              </div>
+        </section>
+
+        <section class="section section--centered">
+            <div class="container container--centered">
+                <h2 class="section__title">What Our Customers Say</h2>
+                <div class="section__common-rate">
+                    <p class="section__mark">4.9</p>
+                    <div class="card__rating rating">
+                        <i class="fa-solid fa-star fa-lg" style="color: #ffb700"></i>
+                        <i class="fa-solid fa-star fa-lg" style="color: #ffb700"></i>
+                        <i class="fa-solid fa-star fa-lg" style="color: #ffb700"></i>
+                        <i class="fa-solid fa-star fa-lg" style="color: #ffb700"></i>
+                        <i class="fa-solid fa-star fa-lg" style="color: #ffb700"></i>
+                    </div>
+                    <p class="section__rating-based">based on 2452+ reviews</p>
+                </div>
+                <div class="gallery gallery--reviews">
+                    <button type="button" class="arrow button--small-shadow arrow--prev">
+                        <i class="fa-solid fa-arrow-left fa-2xl" style="color: #000000"></i>
+                    </button>
+
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+                            <div class="card card--customer swiper-slide">
+                                <img src="assets/images/review-1.jpg" alt="Brooklyn Simmons"
+                                    class="card__review-photo" />
+                                <div class="card__content--customer">
+                                    <div class="card__customer--info">
+                                        <p class="card__customer">Brooklyn Simmons</p>
+                                        <div class="card__rating rating">
+                                            <i class="fa-solid fa-star fa-lg" style="color: #ffb700"></i>
+                                            <i class="fa-solid fa-star fa-lg" style="color: #ffb700"></i>
+                                            <i class="fa-solid fa-star fa-lg" style="color: #ffb700"></i>
+                                            <i class="fa-solid fa-star fa-lg" style="color: #ffb700"></i>
+                                            <i class="fa-solid fa-star fa-lg" style="color: #ffb700"></i>
+                                        </div>
+                                    </div>
+                                    <p class="card__text">
+                                        “Amet minim mollit non deserunt ullamco est sit aliqua
+                                        dolor do amet sint. Velit officia consequat duis enim
+                                        velit mollit. Exercitation veniam consequat sunt nostrud
+                                        amet. Amet minim mollit non deserunt ullamco est sit
+                                        aliqua dolor do amet sint. Velit officia”
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="card card--customer swiper-slide">
+                                <img src="assets/images/review-2.jpg" alt="Brooklyn Simmons"
+                                    class="card__review-photo" />
+                                <div class="card__content--customer">
+                                    <div class="card__customer--info">
+                                        <p class="card__customer">Imam White</p>
+                                        <div class="card__rating rating">
+                                            <i class="fa-solid fa-star fa-lg" style="color: #ffb700"></i>
+                                            <i class="fa-solid fa-star fa-lg" style="color: #ffb700"></i>
+                                            <i class="fa-solid fa-star fa-lg" style="color: #ffb700"></i>
+                                            <i class="fa-solid fa-star fa-lg" style="color: #ffb700"></i>
+                                            <i class="fa-solid fa-star fa-lg" style="color: #ffb700"></i>
+                                        </div>
+                                    </div>
+                                    <p class="card__text">
+                                        “Amet minim mollit non deserunt ullamco est sit aliqua
+                                        dolor do amet sint. Velit officia consequat duis enim
+                                        velit mollit. Exercitation veniam consequat sunt nostrud
+                                        amet. Amet minim mollit non deserunt ullamco est sit
+                                        aliqua dolor do amet sint. Velit officia”
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="card card--customer swiper-slide">
+                                <img src="assets/images/review-3.jpg" alt="Sarah Johnson" class="card__review-photo" />
+                                <div class="card__content--customer">
+                                    <div class="card__customer--info">
+                                        <p class="card__customer">Sarah Johnson</p>
+                                        <div class="card__rating rating">
+                                            <i class="fa-solid fa-star fa-lg" style="color: #ffb700"></i>
+                                            <i class="fa-solid fa-star fa-lg" style="color: #ffb700"></i>
+                                            <i class="fa-solid fa-star fa-lg" style="color: #ffb700"></i>
+                                            <i class="fa-solid fa-star fa-lg" style="color: #ffb700"></i>
+                                            <i class="fa-solid fa-star fa-lg" style="color: #ffb700"></i>
+                                        </div>
+                                    </div>
+                                    <p class="card__text">
+                                        "Amet minim mollit non deserunt ullamco est sit aliqua
+                                        dolor do amet sint. Velit officia consequat duis enim
+                                        velit mollit. Exercitation veniam consequat sunt nostrud
+                                        amet. Amet minim mollit non deserunt ullamco est sit
+                                        aliqua dolor do amet sint. Velit officia"
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="button" class="arrow button--small-shadow arrow--next">
+                        <i class="fa-solid fa-arrow-left fa-2xl fa-flip-horizontal" style="color: #000000"></i>
+                    </button>
+                </div>
             </div>
-            <div class="footer__subscribe footer__flex-column">
-              <h3 class="footer__title footer__title--find">
-                First One’s On Us!
-              </h3>
-              <input type="text" placeholder="E-mail" class="footer__input" />
-              <button type="button" class="footer__button button--primary">
-                SUBSCRIBE
-              </button>
+        </section>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__container">
+                    <div class="footer__slogan footer__flex-column">
+                        <img src="assets/images/logo.png" alt="" class="footer__logo" />
+                        <p class="footer__description">
+                            We made it our mission to create community everyday and grow
+                            meaningful, lasting relationships with our staff, our suppliers
+                            and of course you, our customers.
+                        </p>
+                    </div>
+                    <div class="footer__contact footer__flex-column">
+                        <h3 class="footer__title">Contact Alowishus!</h3>
+                        <div class="footer__contacts">
+                            <button type="button" class="button button--small-shadow">
+                                <i class="fa-solid fa-envelope fa-xl" style="color: #64646a"></i>
+                            </button>
+                            <p class="footer__description">alowishus@gmai.com</p>
+                        </div>
+                        <div class="footer__contacts">
+                            <button type="button" class="button button--small-shadow">
+                                <i class="fa-solid fa-phone fa-xl" style="color: #64646a"></i>
+                            </button>
+                            <p class="footer__description">+110 214 214 2451</p>
+                        </div>
+                        <div class="footer__socials">
+                            <button type="button" class="button button--small-shadow">
+                                <i class="fa-brands fa-facebook-f fa-xl" style="color: #64646a"></i>
+                            </button>
+                            <button type="button" class="button button--small-shadow">
+                                <i class="fa-brands fa-instagram fa-2xl" style="color: #64646a"></i>
+                            </button>
+                            <button type="button" class="button button--small-shadow">
+                                <i class="fa-brands fa-twitter fa-xl" style="color: #64646a"></i>
+                            </button>
+                            <button type="button" class="button button--small-shadow">
+                                <i class="fa-brands fa-linkedin-in fa-xl" style="color: #64646a"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="footer__locations footer__flex-column">
+                        <h3 class="footer__title">Store Locations</h3>
+                        <p class="footer__description footer__description--link">
+                            Find your nearest Alowishus store with opening hours, location
+                            and contact details.
+                        </p>
+                        <div class="footer__link-group">
+                            <a href="#" class="footer__link">Find my Alowishus</a>
+                            <a href="#"><i
+                                    class="fa-solid fa-arrow-left fa-xl fa-flip-horizontal footer__arrow"></i></a>
+                        </div>
+                    </div>
+                    <div class="footer__subscribe footer__flex-column">
+                        <h3 class="footer__title footer__title--find">
+                            First One’s On Us!
+                        </h3>
+                        <input type="text" placeholder="E-mail" class="footer__input" />
+                        <button type="button" class="footer__button button--primary">
+                            SUBSCRIBE
+                        </button>
+                    </div>
+                    <div class="footer__copyright">
+                        <p class="footer__text">
+                            Copytright © 2022
+                            <span class="footer__text footer__text--bold">Alowishus Delicious</span>
+                        </p>
+                    </div>
+                    <div class="footer__details">
+                        <p class="footer__text">Terms of Use</p>
+                        <p class="footer__text">|</p>
+                        <p class="footer__text">Privacy Policy</p>
+                    </div>
+                </div>
             </div>
-            <div class="footer__copyright">
-              <p class="footer__text">
-                Copytright © 2022
-                <span class="footer__text footer__text--bold"
-                  >Alowishus Delicious</span
-                >
-              </p>
-            </div>
-            <div class="footer__details">
-              <p class="footer__text">Terms of Use</p>
-              <p class="footer__text">|</p>
-              <p class="footer__text">Privacy Policy</p>
-            </div>
-          </div>
-        </div>
-      </footer>
+        </footer>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <script>
-      document.addEventListener("DOMContentLoaded", () => {
-        const swiper = new Swiper(".swiper", {
-          loop: true,
-          slidesPerView: 1,
-          spaceBetween: 30,
-          navigation: {
-            nextEl: ".arrow--next",
-            prevEl: ".arrow--prev",
-          },
-          breakpoints: {
-            768: {
-              slidesPerView: 1,
-              spaceBetween: 30,
-            },
-            1024: {
-              slidesPerView: 2,
-              spaceBetween: 30,
-            },
-          },
+        document.addEventListener("DOMContentLoaded", () => {
+            const swiper = new Swiper(".swiper", {
+                loop: true,
+                slidesPerView: 1,
+                spaceBetween: 30,
+                navigation: {
+                    nextEl: ".arrow--next",
+                    prevEl: ".arrow--prev",
+                },
+                breakpoints: {
+                    768: {
+                        slidesPerView: 1,
+                        spaceBetween: 30,
+                    },
+                    1024: {
+                        slidesPerView: 2,
+                        spaceBetween: 30,
+                    },
+                },
+            });
         });
-      });
     </script>
-  </body>
+</body>
+
 </html>

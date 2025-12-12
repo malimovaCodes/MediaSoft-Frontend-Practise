@@ -88,6 +88,10 @@
         flex-direction: row;
         gap: 5px;
     }
+
+    &__review-photo {
+        width: 100%;
+    }
 }
 
 @media (max-width: 1485px) {
@@ -138,7 +142,7 @@
         &__text {
             font-size: 18px;
             line-height: 26px;
-            max-width: 200px;
+            max-width: 400px;
         }
 
         &__customer {
@@ -147,10 +151,6 @@
                 flex-direction: column;
                 gap: 10px;
             }
-        }
-
-        &__review-photo {
-            width: 380px;
         }
 
         &__button {
@@ -168,11 +168,6 @@
             line-height: 24px;
             max-width: 400px;
         }
-
-
-        &__review-photo {
-            width: 300px;
-        }
     }
 }
 
@@ -182,21 +177,7 @@
         min-height: 300px;
 
         &__content {
-            font-size: 15px;
-            display: flex;
-            flex-direction: column;
-            text-align: left;
             padding: 15px;
-            width: 100%;
-            box-sizing: border-box;
-            align-items: flex-start;
-            height: 100%;
-        }
-
-        &__text {
-            font-size: 16px;
-            line-height: 24px;
-            max-width: 400px;
         }
 
         &__name {
@@ -212,13 +193,14 @@
             width: 80px;
         }
 
-
-        &__review-photo {
-            width: 300px;
-        }
-
         &__button {
             @include mixins.button-primary(10px);
         }
+    }
+}
+
+@media (max-width: 500px) {
+    .card {
+        max-width: 250px;
     }
 }
